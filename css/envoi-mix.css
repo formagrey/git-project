@@ -1,0 +1,113 @@
+
+form {
+    /* Pour le centrer dans la page */
+    margin: 0 auto;
+    min-width: 400px;
+    /* Pour voir les limites du formulaire */
+    padding: 1em;
+
+  margin-top: 10%;
+  background: #eeeeee;
+  border: 3px solid #bbbbbb;
+  width: 450px;
+  min-height: 300px;
+  
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+
+  box-shadow: 0px 0px 10px 4px rgba(0, 119, 119, 0.60);
+-moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.60);
+-webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.60);
+
+
+/*fond*/
+background:-webkit-linear-gradient(180deg, rgba(242,242,242,0.8) 0%, rgba(0, 0, 0, 0.45) 100%);
+background:-o-linear-gradient(180deg, rgba(242,242,242,0.8) 0%, rgba(0, 0, 0, 0.45) 100%);
+background:-moz-linear-gradient(180deg, rgba(242,242,242,0.8) 0%, rgba(0, 0, 0, 0.45) 100%);
+background:linear-gradient(180deg, rgba(242,242,242,0.8) 0%, rgba(0, 0, 0, 0.45) 100%);
+
+
+}
+
+	/* un peu d'air à chacun des blocs */
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input, textarea ,select {
+    /* Afin de s'assurer que tous les champs textuels utilisent la même police
+       Par défaut, textarea utilise une police à espacement constant */
+    font: 1em sans-serif;
+
+    /* Pour donner la même dimension à tous les champs textuels */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Pour harmoniser l'apparence des bordures des champs textuels */
+    border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+    /* Afin de rehausser les éléments actifs */
+    border-color: #000;
+}
+
+textarea {
+    /* Pour aligner correctement les champs multilignes et leurs étiquettes */
+    vertical-align: top;
+
+    /* Pour donner assez d'espace pour entrer du texte */
+    height: 5em;
+
+    /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
+       Cela ne marche pas avec tous les navigateurs  */
+    resize: vertical;
+}
+.boutton {
+    /* Pour positionner les boutons de la même manière que les champs textuels */
+    padding-left: 90px; /* même dimension que les étiquettes */
+    padding-top:  20px;
+}
+
+button {
+    /* Cette marge représente approximativement le même espace
+       que celui entre les étiquettes et les champs textuels */
+    margin-left: .5em;
+
+    /* habillage */
+  background: #cfcfcf;
+  background-image: -webkit-linear-gradient(top, #cfcfcf, #0e2a3b);
+  background-image: -moz-linear-gradient(top, #cfcfcf, #0e2a3b);
+  background-image: -ms-linear-gradient(top, #cfcfcf, #0e2a3b);
+  background-image: -o-linear-gradient(top, #cfcfcf, #0e2a3b);
+  background-image: linear-gradient(to bottom, #cfcfcf, #0e2a3b);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 11px 20px 10px 20px;
+  text-decoration: none;
+}
+
+button:hover {
+  background: #000000;
+  background-image: -webkit-linear-gradient(top, #000000, #ababab);
+  background-image: -moz-linear-gradient(top, #000000, #ababab);
+  background-image: -ms-linear-gradient(top, #000000, #ababab);
+  background-image: -o-linear-gradient(top, #000000, #ababab);
+  background-image: linear-gradient(to bottom, #000000, #ababab);
+  text-decoration: none;
+}
+
+fieldset{margin-left: 50px;}
